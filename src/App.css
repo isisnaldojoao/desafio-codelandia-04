@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: var(--four-color);
+}
+
+:root{
+    --primary-color: #1E9E6A;
+    --second-color: #EFFBF8;
+    --third-color: #1A202C;
+    --gray: #656769;
+    --gray-light: #E8E8E8;
+    --white: #FFF;
+    --white-light: #F1F1F1;
+    --four-color: #F7FAFC;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+span{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#icon{
+    margin-bottom: 50px;
+    margin-left: 350px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.area{
+    display: flex;
+}
+
+.area-image{
+    max-width: 700px;
+    width: 700px;
+    background-color: var(--second-color);
+}
+
+.area-count{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.area-flex-container {
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 700px;
+}
+
+.area-image,
+.area-count{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.area-title,
+.area-login,
+.area-verify,
+.area-login-option{
+    width: 350px;
+}
+
+.area-title h3 {
+    font-weight: normal;
+}
+
+.area-login{
+    margin-top: 50px;
+}
+
+.area-login p{
+    margin: 5px;
+}
+
+.area-login input{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border-color: var(--green);
+    background-color: var(--gray-light);
+    outline: none;
+    border: none;
+    text-indent: 30px;
+}
+
+.area-login input::placeholder{
+   margin: 50px;
+}
+
+.area-verify{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.verify{
+    display: flex;
+}
+
+.verify p{
+    margin-left: 10px;
+}
+
+.area-login-option button{
+    display: flex;
+    margin: 8px;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.area-login-option .enter{
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.area-login-option .google{
+    background-color: var(--third-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.area-login-option img{
+    width: 25px;
+    background-color: var(--third-color);
+}
+
+.area-login-option button:hover{
+    transform:scale(1.1)
+}
+
+.area-register{
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+@media (max-width: 992px) {   
+    .form__content{
+        padding: 1rem;
+    }
+
+    .container__image svg {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 850px) {   
+    .main {
+        align-items: center;
+        justify-content: center;
+    }
+    .area-image {
+        display: none;
+    }
+
+    .area-flex-container {
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .area-flex-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .form-radio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .area-login-option button {
+        margin-top: 2.5rem;
+    }
+}
