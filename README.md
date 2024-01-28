@@ -8,3 +8,7 @@ Desafio feito para a plataforma de desenvolvedores #codelandia.
 · React ( o react foi utilizado para fins de estudo e para maximizar a minha pratica com a tecnologia)<br>
 · HTML<br>
 · CSS
+
+## Referências
+[Login](https://github.com/RenanS80/login?tab=readme-ov-file)
+
