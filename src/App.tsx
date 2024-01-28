@@ -7,7 +7,7 @@ function App() {
       <div className='main'>
        <div className='area'>
         <section className='area-image'>
-          <img  src="src/assets/illustration.svg" style={{ width: '400px'}} alt="" />
+          <img  src="https://i.imgur.com/xgw2st3.png" style={{ width: '400px'}} alt="" />
         </section>
         <section className='area-count'>
           <div className='area-flex-container'>
@@ -34,7 +34,7 @@ function App() {
           <div className='area-login-option'>
             <button className='enter'>Entrar</button>
             <button className='google'>
-              <img src='src/assets/google.png'/>
+              <img src='https://i.imgur.com/bu2t9Lz.png'/>
               Ou faça login com o Google
             </button>
           </div>
